@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+}
+
+.homepage-links {
+  font-size: 50px;
+  color: blue;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.country-links {
+  font-size: 30px;
+  color: blue;
+}
+
+.country-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
