@@ -30,7 +30,7 @@ class App extends React.Component {
         user: user,
         countriesList: countries
       })
-    } catch (err) {
+    } catch(err) {
       const getCountries = await axios.get('https://restcountries.eu/rest/v2/all')
       const countries = getCountries.data
       this.setState({
