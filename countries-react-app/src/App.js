@@ -22,8 +22,8 @@ class App extends React.Component {
     try {
       const token = localStorage.getItem('token')
       const getCountries = axios.get('https://restcountries.eu/rest/v2/all')
-      const authorize = axios.get('http://localhost:5000/user/current-user', {headers: { token }})
-      const apis = await Promise.all([getCountries, authorize])
+      const authenticate = axios.get('http://localhost:5000/user/current-user', {headers: { token }})
+      const apis = await Promise.all([getCountries, authenticate])
       const countries = apis[0].data
       const user = apis[1].data.currentUser.name
       this.setState({
